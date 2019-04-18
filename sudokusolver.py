@@ -42,7 +42,6 @@ def get_empty_cells(puzzle):
     return None
     
 def is_valid(puzzle, num, pos):
-
     #Check if introduced number is valid in the row
     for col in range(9):
         if puzzle[pos[0]][col] == num and pos[1] != col:    #Checks if number is already in row, no need checking the position just added.
