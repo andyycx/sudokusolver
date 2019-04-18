@@ -53,7 +53,6 @@ def is_valid(puzzle, num, pos):
             return False
 
     #Check if introduced number is valid in the box
-
     box_col = pos[1] // 3    #Determines box number in x-axis. 0: boxcol1 / 1: boxcol2 / 2: boxcol3
     box_row = pos[0] // 3    #Determines box number in y-axis. 0: boxrow1 / 1: boxrow2 / 2: boxrow3
 
