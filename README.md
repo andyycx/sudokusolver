@@ -2,8 +2,10 @@
 *Mini Python project to understand backtracking with classic Sudoku puzzle.*
 
 ## **Intro**
-Credits to [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured)
+Credits to [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured).
+
 *Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.
+
 Tool used to generate sample sudoku board and check the final answer: [Sudoku Bencher](http://sudoku.becher-sundstroem.de/)*
 
 ## **Body**
