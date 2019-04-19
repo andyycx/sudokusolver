@@ -6,7 +6,7 @@ Tool used to generate sample sudoku board and check the final answer: http://sud
 
 NOTE: This project only solves 9x9 sudoku puzzles. Other types of puzzles won't work.
 
-Sudoku puzzles are implemented as a 2D-array. There is already one stored in variable "board". Empty cells are represented by 0
+Sudoku puzzles are implemented as a 2D-array. ~~There is already one stored in variable "board"~~. Empty cells are represented by 0
 There are 4 functions total:
 
   ·print_board(puzzle): takes the 2D-array sudoku as input and prints the board as string representations.
@@ -17,7 +17,7 @@ There are 4 functions total:
   
   ·solve_sudoku(puzzle): solves sudoku puzzle. Checks if there are any empty cells calling get_empty_cells(puzzle). If there are empty        cells, test a digit from 1 to 9 in an empty cell, (x, y) position given by get_empty_cells(puzzle). Then check validness of digit with      is_valid(puzzle, digit, (row,col)). If valid, add number to (x, y) cell. After, recursively call solve_sudoku(puzzle) with new digits in    board. If it encounters an invalid digit, it resets the corresponding cell and starts again, until every cell is valid and non-empty.
   
- 
+ 19/04/19 UPDATE: Users can now input rows of sudoku puzzle without needing to separate with commas or other separators. Empty cells are still represented by a 0.
   
   
 
