@@ -5,18 +5,6 @@ Last modified on 18 Apr 2019
 @author: Andy
 """
 
-board = [
-    [0, 0, 0, 4, 0, 3, 0, 7, 0],
-    [0, 4, 7, 9, 0, 1, 0, 6, 8],
-    [0, 0, 0, 0, 0, 2, 4, 0, 0],
-    [4, 0, 1, 0, 3, 0, 9, 0, 7],
-    [0, 7, 0, 0, 9, 0, 1, 5, 0],
-    [0, 6, 0, 5, 0, 7, 0, 0, 0],
-    [0, 1, 4, 3, 0, 8, 0, 9, 5],
-    [6, 0, 5, 0, 0, 0, 0, 4, 2],
-    [0, 3, 2, 0, 4, 5, 7, 0, 0]
-]
-
 def print_board(puzzle):
     #2D array to string representation
     box_lines = "+-----------" * 3 + "+"
@@ -42,6 +30,7 @@ def get_empty_cells(puzzle):
     return None
     
 def is_valid(puzzle, num, pos):
+
     #Check if introduced number is valid in the row
     for col in range(9):
         if puzzle[pos[0]][col] == num and pos[1] != col:    #Checks if number is already in row, no need checking the position just added.
@@ -53,6 +42,7 @@ def is_valid(puzzle, num, pos):
             return False
 
     #Check if introduced number is valid in the box
+
     box_col = pos[1] // 3    #Determines box number in x-axis. 0: boxcol1 / 1: boxcol2 / 2: boxcol3
     box_row = pos[0] // 3    #Determines box number in y-axis. 0: boxrow1 / 1: boxrow2 / 2: boxrow3
 
@@ -84,7 +74,18 @@ def solve_sudoku(puzzle):
 
     return False
 
-input("Enter any key to start sudoku...\n")
+board = [
+    [int(i) for i in input("Enter first row:...")],
+    [int(i) for i in input("Enter second row:...")],
+    [int(i) for i in input("Enter third row:...")],
+    [int(i) for i in input("Enter fourth row:...")],
+    [int(i) for i in input("Enter fifth row:...")],
+    [int(i) for i in input("Enter sixth row:...")],
+    [int(i) for i in input("Enter seventh row:...")],
+    [int(i) for i in input("Enter eighth row:...")],
+    [int(i) for i in input("Enter ninth row:...")]
+]
+
 print_board(board)
 print("This is your unsolved sudoku board...\n")
 input("Enter any key to solve sudoku...\n")
