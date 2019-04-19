@@ -4,9 +4,9 @@
 ## **Intro**
 Credits to [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured).
 
-*Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.
+*Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.*
 
-Tool used to generate sample sudoku board and check the final answer: [Sudoku Bencher](http://sudoku.becher-sundstroem.de/)*
+*Tool used to generate sample sudoku board and check the final answer: [Sudoku Bencher](http://sudoku.becher-sundstroem.de/)*
 
 ## **Body**
 ***NOTE: This project only solves 9x9 sudoku puzzles. Other types of puzzles won't work.***
