@@ -1,10 +1,13 @@
 # sudokusolver
-Mini Python project to understand backtracking with classic Sudoku puzzle.
-Credits to Tech with Tim: https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured
-Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.
-Tool used to generate sample sudoku board and check the final answer: http://sudoku.becher-sundstroem.de/
+*Mini Python project to understand backtracking with classic Sudoku puzzle.*
 
-NOTE: This project only solves 9x9 sudoku puzzles. Other types of puzzles won't work.
+**Intro**
+Credits to [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured)
+*Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.
+Tool used to generate sample sudoku board and check the final answer: [Sudoku Bencher](http://sudoku.becher-sundstroem.de/)*
+
+**Body**
+***NOTE: This project only solves 9x9 sudoku puzzles. Other types of puzzles won't work.***
 
 Sudoku puzzles are implemented as a 2D-array. ~~There is already one stored in variable "board"~~. Empty cells are represented by 0
 There are 4 functions total:
@@ -17,7 +20,7 @@ There are 4 functions total:
   
   ·solve_sudoku(puzzle): solves sudoku puzzle. Checks if there are any empty cells calling get_empty_cells(puzzle). If there are empty        cells, test a digit from 1 to 9 in an empty cell, (x, y) position given by get_empty_cells(puzzle). Then check validness of digit with      is_valid(puzzle, digit, (row,col)). If valid, add number to (x, y) cell. After, recursively call solve_sudoku(puzzle) with new digits in    board. If it encounters an invalid digit, it resets the corresponding cell and starts again, until every cell is valid and non-empty.
   
- 19/04/19 UPDATE: Users can now input rows of sudoku puzzle without needing to separate with commas or other separators. Empty cells are still represented by a 0.
+ ***19/04/19 UPDATE***: Users can now input rows of sudoku puzzle without needing to separate with commas or other separators. Empty cells are still represented by a 0.
   
   
 
