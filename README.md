@@ -1,14 +1,12 @@
 # sudokusolver
 *Mini Python project to understand backtracking with classic Sudoku puzzle.*
 
-**Intro**
-
+##**Intro**
 Credits to [Tech with Tim](https://www.youtube.com/channel/UC4JX40jDee_tINbkjycV4Sg/featured)
 *Simple, fast way to learn about backtracking. After watching Tim's tutorials, it was very straightforward. Clearly explained concepts.
 Tool used to generate sample sudoku board and check the final answer: [Sudoku Bencher](http://sudoku.becher-sundstroem.de/)*
 
-**Body**
-
+##**Body**
 ***NOTE: This project only solves 9x9 sudoku puzzles. Other types of puzzles won't work.***
 
 Sudoku puzzles are implemented as a 2D-array. ~~There is already one stored in variable "board"~~. Empty cells are represented by 0
